@@ -52,14 +52,14 @@ public class AgenCerdas {
     }
 
     public String[] pisah(String awal) {
-        String x[] = awal.split(" ");
+        String x[] = awal.split(",");
         return x;
     }
 
     public static void main(String[] args) {
         AgenCerdas a = new AgenCerdas(2);
-        a.setKondisi(1, "Lokasi 1", "kanan", "kotor");
-        a.setKondisi(2, "Lokasi 2", "kiri", "kotor");
+        a.setKondisi(1, "Lokasi 1", "kanan", "Debu,Dompet,Gorengan,Kapas,tisu");
+        a.setKondisi(2, "Lokasi 2", "kiri", "Mie,Debu,Tisu,Sterofom,Kertas");
         a.bersihkan();
 //
 //        String pis[] = a.pisah("Firmanda Mulyawan Nugroho");
