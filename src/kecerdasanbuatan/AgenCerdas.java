@@ -65,7 +65,7 @@ public class AgenCerdas {
                 break;
             }
         }
-        System.out.println("SEMUA SUDAH BERSIH");
+        System.out.println("SEMUA SUDAH BERSIH \nby kelompok 2");
     }
 
     public String[] pisah(String awal) {
@@ -78,6 +78,9 @@ public class AgenCerdas {
         a.setKondisi(1, "Lokasi 1", "kanan", "kotor", "Debu,Dompet,Gorengan,Kapas,tisu");
         a.setKondisi(2, "Lokasi 2", "kiri", "kotor", "Mie,Debu,Tisu,Sterofom,Kertas");
         a.bersihkan();
+        
+    }
+}
 //
 //        String pis[] = a.pisah("Firmanda Mulyawan Nugroho");
 //       for(int i=0;i<pis.length;i++)
@@ -85,3 +88,4 @@ public class AgenCerdas {
 
     }
 }
+
