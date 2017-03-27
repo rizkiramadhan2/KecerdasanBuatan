@@ -8,6 +8,7 @@ package kecerdasanbuatan;
 public class AgenCerdas {
 
     private String lingkungan[][];
+    public String Jenissampah[] = {"debu", "bulu", "kapas", "tisu", "sterofom", "kertas"};
 
     AgenCerdas(int location) {
         lingkungan = new String[location][3];
@@ -50,10 +51,20 @@ public class AgenCerdas {
         System.out.println("SEMUA SUDAH BERSIH");
     }
 
+    public String[] pisah(String awal) {
+        String x[] = awal.split(" ");
+        return x;
+    }
+
     public static void main(String[] args) {
         AgenCerdas a = new AgenCerdas(2);
         a.setKondisi(1, "Lokasi 1", "kanan", "kotor");
         a.setKondisi(2, "Lokasi 2", "kiri", "kotor");
         a.bersihkan();
+//
+//        String pis[] = a.pisah("Firmanda Mulyawan Nugroho");
+//       for(int i=0;i<pis.length;i++)
+//            System.out.println(i+"."+pis[i]+"\n");
+            
     }
 }
